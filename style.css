@@ -1,0 +1,241 @@
+/* ===== Page ===== */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 15px;
+  border-bottom: 6px double #ffffff;
+}
+
+header h1 {
+  margin: 0 0 5px 0;
+  font-size: 2.2em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 0 0 20px 0;
+  font-style: italic;
+}
+
+/* ===== Profile image ===== */
+header img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  filter: grayscale(100%) contrast(1.2);
+  transform: rotate(-3deg);
+  transition: transform 0.4s;
+}
+
+header img:hover {
+  transform: rotate(3deg) scale(1.05);
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  border-bottom: 4px solid #000000;
+}
+
+nav a {
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 14px;
+  margin: 4px;
+  border: 2px solid #000000;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ===== Main area ===== */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+/* ===== Sections ===== */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 30px 0;
+  border: 3px solid #000000;
+  box-shadow: 8px 8px 0 #000000;
+}
+
+section h2 {
+  display: inline-block;
+  margin-top: 0;
+  padding: 2px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+/* ===== Highlight class ===== */
+.highlight {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0 6px;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid #000000;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) td {
+  background-color: #eeeeee;
+}
+
+/* ===== Lists ===== */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+}
+
+ul ul {
+  list-style-type: "-> ";
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+/* ===== Links inside sections ===== */
+section a {
+  color: #000000;
+  font-weight: bold;
+}
+
+section a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ===== Form ===== */
+form {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px dashed #000000;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-family: inherit;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  background-color: #eeeeee;
+}
+
+form input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: rotate(-2deg) scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-top: 6px double #ffffff;
+}
+
+footer p {
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: letter-spacing 0.3s;
+}
+
+footer a:hover {
+  letter-spacing: 3px;
+}
+
+/* ===== Small screens ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  section {
+    box-shadow: 4px 4px 0 #000000;
+  }
+}
